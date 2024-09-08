@@ -27,6 +27,8 @@ double t;
 void setup() {
   pinMode(IR_Sensor1, INPUT);
   pinMode(IR_Sensor2, INPUT);
+
+  Serial.begin(9600);
      
   lcd.begin(16, 2, &lcdWire); 
   lcd.backlight();
