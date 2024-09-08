@@ -129,4 +129,7 @@ void updateLCD(float distance_m_fig) {
   lcd.print("Height (m):");
   lcd.setCursor(10, 1);
   lcd.print(distance_m_fig ,4);
+
+  Serial.print("Height (m):");
+  Serial.println(distance_m_fig, 4);
 }
